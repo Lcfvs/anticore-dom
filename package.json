@@ -1,6 +1,6 @@
 {
   "name": "anticore-dom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module to pick the JS APIs as simple static functions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Lcfvs/anticore-dom#readme",
   "dependencies": {
-    "anticore-core": "0.0.13"
+    "anticore-core": "0.0.14"
   }
 }
