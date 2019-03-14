@@ -15,8 +15,6 @@ function trueListener (listener, event) {
 }
 
 export default function onFileInput (target, listener, options) {
-  options = options || empty()
-
   if (nodeName(target) === 'input' && target.type === 'file') {
     listener = bind(trueListener, target, listener)
 
