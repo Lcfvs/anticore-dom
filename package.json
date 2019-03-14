@@ -1,6 +1,6 @@
 {
   "name": "anticore-dom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A module to pick the JS APIs as simple static functions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
