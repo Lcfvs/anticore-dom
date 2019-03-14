@@ -5,7 +5,7 @@ import parent from '../query/parent'
 const window = global()
 const method = window.Element.prototype.replaceChild
 
-export function replace (node, refNode) {
+export default function replace (node, refNode) {
   call(method, parent(refNode), node, refNode)
 
   return node

@@ -12,7 +12,7 @@ import data from './data'
 import style from './style'
 import text from './text'
 
-export function update (element, config) {
+export default function update (element, config) {
   if (isObject(config)) {
     forEach(keys(config), name => {
       const value = config[name]
