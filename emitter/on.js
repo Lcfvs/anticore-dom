@@ -1,4 +1,4 @@
-import indexOf from 'anticore-core/Array/indexOf'
+import includes from 'anticore-core/Array/includes'
 import bind from 'anticore-core/Function/bind'
 import call from 'anticore-core/Function/call'
 import curry from 'anticore-core/Function/curry'
@@ -67,7 +67,7 @@ function matching (event, target, listener, options) {
     return
   }
 
-  if (keys && indexOf(keys, event.key) === -1) {
+  if (keys && !includes(keys, event.key)) {
     return
   }
 
