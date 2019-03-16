@@ -1,9 +1,8 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Element from '../prototypes/Element'
 import parent from '../query/parent'
 
-const window = global()
-const method = window.Element.prototype.replaceChild
+const method = Element.replaceChild
 
 export default function replace (node, refNode) {
   call(method, parent(refNode), node, refNode)

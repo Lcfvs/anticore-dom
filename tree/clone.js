@@ -1,8 +1,7 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Element from '../prototypes/Element'
 
-const window = global()
-const method = window.Element.prototype.cloneNode
+const method = Element.cloneNode
 
 export default function clone (node, deep) {
   return call(method, node, deep)

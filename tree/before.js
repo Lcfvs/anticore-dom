@@ -1,10 +1,9 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Element from '../prototypes/Element'
 import parent from '../query/parent'
 import append from './append'
 
-const window = global()
-const method = window.Element.prototype.insertBefore
+const method = Element.insertBefore
 
 export default function before (node, refNode, parentNode) {
   if (refNode) {

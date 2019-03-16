@@ -2,14 +2,12 @@ import includes from 'anticore-core/Array/includes'
 import bind from 'anticore-core/Function/bind'
 import call from 'anticore-core/Function/call'
 import curry from 'anticore-core/Function/curry'
-import global from 'anticore-core/global'
 import empty from 'anticore-core/Object/empty'
 import concat from 'anticore-core/String/concat'
+import Element from '../prototypes/Element'
 
-const window = global()
-const prototype = window.Element.prototype
-const listen = prototype.addEventListener
-const forget = prototype.removeEventListener
+const listen = Element.addEventListener
+const forget = Element.removeEventListener
 const events = empty()
 
 events.blur = ['blur', 'touchcancel', 'touchleave']

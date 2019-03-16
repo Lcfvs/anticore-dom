@@ -1,13 +1,11 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
 import isInteger from 'anticore-core/Number/isInteger'
+import Document from '../prototypes/Document'
+import Range from '../prototypes/Range'
+import Selection from '../prototypes/Selection'
 import document from '../node/document'
 import current from './current'
 
-const window = global()
-const Document = window.Document.prototype
-const Range = window.Range.prototype
-const Selection = window.Selection.prototype
 const createRange = Document.createRange
 const selectNodeContents = Range.selectNodeContents
 const setStart = Range.setStart

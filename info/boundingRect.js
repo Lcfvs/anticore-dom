@@ -1,9 +1,8 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Element from '../prototypes/Element'
 import isElement from './isElement'
 
-const window = global()
-const method = window.Element.prototype.getBoundingClientRect
+const method = Element.getBoundingClientRect
 
 export default function boundingRect (element) {
   if (isElement(element)) {

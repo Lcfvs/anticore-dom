@@ -1,16 +1,14 @@
 import isBoolean from 'anticore-core/Boolean/isBoolean'
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
 import isNull from 'anticore-core/null/isNull'
 import isNumber from 'anticore-core/Number/isNumber'
 import camelToDash from 'anticore-core/String/camelToDash'
 import isString from 'anticore-core/String/isString'
+import Element from '../prototypes/Element'
 
-const window = global()
-const prototype = window.Element.prototype
-const getAttribute = prototype.getAttribute
-const setAttribute = prototype.setAttribute
-const removeAttribute = prototype.removeAttribute
+const getAttribute = Element.getAttribute
+const setAttribute = Element.setAttribute
+const removeAttribute = Element.removeAttribute
 
 export default function attr (element, name, value) {
   name = camelToDash(name)

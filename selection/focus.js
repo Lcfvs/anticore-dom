@@ -1,9 +1,8 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Element from '../prototypes/Element'
 import current from './current'
 
-const window = global()
-const method = window.Element.prototype.focus
+const method = Element.focus
 
 export default function focus (node) {
   call(method, node)

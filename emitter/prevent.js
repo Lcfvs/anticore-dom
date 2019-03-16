@@ -1,8 +1,7 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Event from '../prototypes/Event'
 
-const window = global()
-const method = window.Event.prototype.preventDefault
+const method = Event.preventDefault
 
 export default function prevent (event) {
   call(method, event)

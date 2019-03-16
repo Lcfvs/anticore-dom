@@ -1,10 +1,8 @@
 import call from 'anticore-core/Function/call'
-import global from 'anticore-core/global'
+import Event from '../prototypes/Event'
 
-const window = global()
-const prototype = window.Event.prototype
-const stopImmediatePropagation = prototype.stopImmediatePropagation
-const stopPropagation = prototype.stopPropagation
+const stopImmediatePropagation = Event.stopImmediatePropagation
+const stopPropagation = Event.stopPropagation
 
 export default function stop (event, immediate) {
   call(immediate ? stopImmediatePropagation : stopPropagation, event)
