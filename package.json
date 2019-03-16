@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Lcfvs/anticore-dom#readme",
   "dependencies": {
-    "anticore-core": "0.0.15"
+    "anticore-core": "0.0.16"
   }
 }
