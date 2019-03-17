@@ -1,4 +1,4 @@
-import filter from 'anticore-core/array/filter'
+import filter from 'anticore-core/Array/filter'
 import isElement from '../info/isElement'
 import nextNodes from './nextNodes'
 

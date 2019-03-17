@@ -1,5 +1,5 @@
-import indexOf from 'anticore-core/array/indexOf'
-import slice from 'anticore-core/array/slice'
+import indexOf from 'anticore-core/Array/indexOf'
+import slice from 'anticore-core/Array/slice'
 import nodes from './nodes'
 import parent from './parent'
 
