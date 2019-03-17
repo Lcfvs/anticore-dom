@@ -10,10 +10,8 @@ import sanitize from './sanitize'
 export default function html (element, data) {
   if (isElement(element)) {
     if (!isUndefined(data)) {
-      const fragment = fromString(data)
-
-      forEach(elements(fragment), sanitize)
-      append(fragment, empty(element))
+      element.innerHTML = data
+      forEach(elements(element), sanitize)
 
       return element
     }

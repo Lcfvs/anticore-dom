@@ -15,8 +15,10 @@ export default function fragment (contents) {
   }
 
   if (isCollection(contents)) {
-    return appendAll(contents, node)
+    appendAll(contents, node)
+  } else {
+    append(contents, node)
   }
 
-  return append(contents, node)
+  return node
 }

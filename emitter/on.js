@@ -50,18 +50,18 @@ function each (method, event, target, listener, options) {
   }
 }
 
-function matching (event, target, listener, options) {
+function matching (target, listener, options, event) {
   const {ctrl, alt, shift, keys, code} = options
 
-  if (event.ctrlKey !== !!ctrl) {
+  if (!event.ctrlKey !== !ctrl) {
     return
   }
 
-  if (event.altKey !== !!alt) {
+  if (!event.altKey !== !alt) {
     return
   }
 
-  if (event.shiftKey !== !!shift) {
+  if (!event.shiftKey !== !shift) {
     return
   }
 
@@ -79,7 +79,7 @@ function matching (event, target, listener, options) {
 export default function on (event, target, listener, options) {
   const config = empty(options || empty())
   const {capture, once, passive} = config
-  const callback = curry(matching, event, target, listener, config)
+  const callback = curry(matching, target, listener, config)
 
   return each(listen, event, target, callback, empty({
     capture,
