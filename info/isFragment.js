@@ -1,5 +1,5 @@
-import global from 'anticore-core/global'
-import isInstanceOf from 'anticore-core/Object/isInstanceOf'
+import global from 'anticore-core/global/index.js'
+import isInstanceOf from 'anticore-core/Object/isInstanceOf.js'
 
 const window = global()
 const constructor = window.DocumentFragment

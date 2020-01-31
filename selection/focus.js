@@ -1,6 +1,6 @@
-import call from 'anticore-core/Function/call'
-import Element from '../prototypes/Element'
-import current from './current'
+import call from 'anticore-core/Function/call.js'
+import Element from '../prototypes/Element.js'
+import current from './current.js'
 
 const method = Element.focus
 

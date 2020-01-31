@@ -1,10 +1,10 @@
-import call from 'anticore-core/Function/call'
-import isInteger from 'anticore-core/Number/isInteger'
-import Document from '../prototypes/Document'
-import Range from '../prototypes/Range'
-import Selection from '../prototypes/Selection'
-import document from '../node/document'
-import current from './current'
+import call from 'anticore-core/Function/call.js'
+import isInteger from 'anticore-core/Number/isInteger.js'
+import Document from '../prototypes/Document.js'
+import Range from '../prototypes/Range.js'
+import Selection from '../prototypes/Selection.js'
+import document from '../node/document.js'
+import current from './current.js'
 
 const createRange = Document.createRange
 const selectNodeContents = Range.selectNodeContents

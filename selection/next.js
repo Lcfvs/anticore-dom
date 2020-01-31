@@ -1,6 +1,6 @@
-import indexOf from 'anticore-core/Array/indexOf'
-import parent from '../query/parent'
-import start from './start'
+import indexOf from 'anticore-core/Array/indexOf.js'
+import parent from '../query/parent.js'
+import start from './start.js'
 
 export default function next (node, targets) {
   let key = indexOf(targets, node)

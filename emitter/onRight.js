@@ -1,5 +1,5 @@
-import empty from 'anticore-core/Object/empty'
-import onKeyDown from './onKeyDown'
+import empty from 'anticore-core/Object/empty.js'
+import onKeyDown from './onKeyDown.js'
 
 const config = empty({
   keys: ['ArrowRight', 'Right'],

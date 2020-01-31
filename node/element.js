@@ -1,6 +1,6 @@
-import call from 'anticore-core/Function/call'
-import Document from '../prototypes/Document'
-import document from './document'
+import call from 'anticore-core/Function/call.js'
+import Document from '../prototypes/Document.js'
+import document from './document.js'
 
 const method = Document.createElement
 const methodNS = Document.createElementNS

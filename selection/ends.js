@@ -1,6 +1,6 @@
-import all from '../query/all'
-import lastNode from '../query/lastNode'
-import current from './current'
+import all from '../query/all.js'
+import lastNode from '../query/lastNode.js'
+import current from './current.js'
 
 export default function ends (node) {
   const selection = current()

@@ -1,5 +1,5 @@
-import call from 'anticore-core/Function/call'
-import Event from '../prototypes/Event'
+import call from 'anticore-core/Function/call.js'
+import Event from '../prototypes/Event.js'
 
 const method = Event.preventDefault
 

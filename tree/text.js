@@ -1,5 +1,5 @@
-import isUndefined from 'anticore-core/undefined/isUndefined'
-import isElement from '../info/isElement'
+import isUndefined from 'anticore-core/undefined/isUndefined.js'
+import isElement from '../info/isElement.js'
 
 export default function text (node, data) {
   if (isElement(node)) {

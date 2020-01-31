@@ -1,11 +1,8 @@
-import forEach from 'anticore-core/Array/forEach'
-import isUndefined from 'anticore-core/undefined/isUndefined'
-import isElement from '../info/isElement'
-import elements from '../query/elements'
-import append from './append'
-import empty from './empty'
-import fromString from './fromString'
-import sanitize from './sanitize'
+import forEach from 'anticore-core/Array/forEach.js'
+import isUndefined from 'anticore-core/undefined/isUndefined.js'
+import isElement from '../info/isElement.js'
+import elements from '../query/elements.js'
+import sanitize from './sanitize.js'
 
 export default function html (element, data) {
   if (isElement(element)) {

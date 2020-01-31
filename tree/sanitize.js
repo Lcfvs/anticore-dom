@@ -1,9 +1,9 @@
-import forEach from 'anticore-core/Array/forEach'
-import substring from 'anticore-core/String/substring'
-import toLowerCase from 'anticore-core/String/toLowerCase'
-import isElement from '../info/isElement'
-import elements from '../query/elements'
-import attr from './attr'
+import forEach from 'anticore-core/Array/forEach.js'
+import substring from 'anticore-core/String/substring.js'
+import toLowerCase from 'anticore-core/String/toLowerCase.js'
+import isElement from '../info/isElement.js'
+import elements from '../query/elements.js'
+import attr from './attr.js'
 
 function forget (attribute) {
   if (toLowerCase(substring(attribute.name, 0, 2)) === 'on') {

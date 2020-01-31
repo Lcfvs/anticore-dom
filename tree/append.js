@@ -1,5 +1,5 @@
-import call from 'anticore-core/Function/call'
-import Element from '../prototypes/Element'
+import call from 'anticore-core/Function/call.js'
+import Element from '../prototypes/Element.js'
 
 const method = Element.appendChild
 
